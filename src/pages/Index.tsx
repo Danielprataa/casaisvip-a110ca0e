@@ -1,16 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import AgeVerification from "@/components/AgeVerification";
+import PhoneMockup from "@/components/PhoneMockup";
+import MemberReviews from "@/components/MemberReviews";
+import Features from "@/components/Features";
+import CTAButton from "@/components/CTAButton";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const [verified, setVerified] = useState(false);
+
+  if (!verified) {
+    return (
+      <div className="min-h-screen gradient-bg flex items-center justify-center">
+        <AgeVerification
+          onConfirm={() => setVerified(true)}
+          onDeny={() => window.history.back()}
+        />
+      </div>
+    );
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen gradient-bg">
+      <section className="pt-16 pb-8 px-4">
+        <PhoneMockup />
+      </section>
+
+      <section className="py-8 px-4">
+        <div className="max-w-md mx-auto">
+          <h3 className="text-xl font-bold text-foreground mb-4">Prévias Exclusivas</h3>
+          <p className="text-muted-foreground text-sm">
+            Atenção: Caso você seja um dos casais das prévias, me chame no @bento021 para remover do site.
+          </p>
+        </div>
+      </section>
+
+      <MemberReviews />
+      <Features />
+      <Footer />
+      <CTAButton />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
