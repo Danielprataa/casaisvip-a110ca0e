@@ -26,14 +26,6 @@ const Index = () => {
         <PhoneMockup />
       </section>
 
-      <section className="py-8 px-4">
-        <div className="max-w-md mx-auto">
-          <h3 className="text-xl font-bold text-foreground mb-4">Prévias Exclusivas</h3>
-          <p className="text-muted-foreground text-sm">
-            Atenção: Caso você seja um dos casais das prévias, me chame no @bento021 para remover do site.
-          </p>
-        </div>
-      </section>
 
       <MemberReviews />
       <Features />
