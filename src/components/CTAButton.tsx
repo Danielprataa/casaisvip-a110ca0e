@@ -1,6 +1,6 @@
 import { Users } from "lucide-react";
 
-const TELEGRAM_LINK = "https://t.me/xvasoubot?start=go_022tdhj5ucd30mkq";
+const TELEGRAM_LINK = "https://casaisvip.com/redirect.html";
 
 const CTAButton = () => {
   return (
