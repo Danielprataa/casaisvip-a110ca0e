@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <script>
+    async function redirecionar() {
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+
+        if (data.country_code === "BR") {
+          // Brasil → Apex
+          window.location.href = "https://apextry.com/go/xvasoubot";
+        } else {
+          // Gringa → Telegram Stripe
+          window.location.href = "https://t.me/couplesvipsbot";
+        }
+
+      } catch (e) {
+        // Se der erro, manda pro internacional (mais seguro)
+        window.location.href = "https://t.me/couplesvipsbot";
+      }
+    }
+
+    redirecionar();
+  </script>
+</head>
+<body>
+  <p>Redirecionando...</p>
+</body>
+</html>
