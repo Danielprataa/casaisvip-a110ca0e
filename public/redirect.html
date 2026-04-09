@@ -5,21 +5,33 @@
   <title>Redirecionando...</title>
   <script>
     async function redirecionar() {
+      const urlBrasil = "https://apextry.com/go/xvasoubot";
+      const urlGringa = "https://t.me/couplesvipsbot";
+
       try {
+        // Tenta buscar a localização pela API (mais preciso)
         const res = await fetch("https://ipapi.co/json/");
+        if (!res.ok) throw new Error('Falha na API');
+        
         const data = await res.json();
 
         if (data.country_code === "BR") {
-          // Brasil → Apex
-          window.location.href = "https://apextry.com/go/xvasoubot";
+          window.location.href = urlBrasil;
         } else {
-          // Gringa → Telegram Stripe
-          window.location.href = "https://t.me/couplesvipsbot";
+          window.location.href = urlGringa;
         }
 
       } catch (e) {
-        // Se der erro, manda pro internacional (mais seguro)
-        window.location.href = "https://t.me/couplesvipsbot";
+        // --- PLANO B: Se a API falhar, checamos o idioma do sistema ---
+        const idioma = navigator.language || navigator.userLanguage;
+        
+        if (idioma.toLowerCase().includes("pt")) {
+          // Se o navegador estiver em português, manda para o Apex (Brasil)
+          window.location.href = urlBrasil;
+        } else {
+          // Se for qualquer outro idioma, manda para a Gringa
+          window.location.href = urlGringa;
+        }
       }
     }
 
