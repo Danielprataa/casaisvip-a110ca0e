@@ -4,38 +4,7 @@
   <meta charset="UTF-8">
   <title>Redirecionando...</title>
   <script>
-    async function redirecionar() {
-      const urlBrasil = "https://apextry.com/go/xvasoubot";
-      const urlGringa = "https://t.me/couplesvipsbot";
-
-      try {
-        // Tenta buscar a localização pela API (mais preciso)
-        const res = await fetch("https://ipapi.co/json/");
-        if (!res.ok) throw new Error('Falha na API');
-        
-        const data = await res.json();
-
-        if (data.country_code === "BR") {
-          window.location.href = urlBrasil;
-        } else {
-          window.location.href = urlGringa;
-        }
-
-      } catch (e) {
-        // --- PLANO B: Se a API falhar, checamos o idioma do sistema ---
-        const idioma = navigator.language || navigator.userLanguage;
-        
-        if (idioma.toLowerCase().includes("pt")) {
-          // Se o navegador estiver em português, manda para o Apex (Brasil)
-          window.location.href = urlBrasil;
-        } else {
-          // Se for qualquer outro idioma, manda para a Gringa
-          window.location.href = urlGringa;
-        }
-      }
-    }
-
-    redirecionar();
+    window.location.href = "https://apextry.com/go/xvasoubot";
   </script>
 </head>
 <body>
