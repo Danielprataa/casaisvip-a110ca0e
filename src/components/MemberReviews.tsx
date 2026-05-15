@@ -4,22 +4,22 @@ const messages = [
   {
     date: "29 de janeiro",
     texts: [
-      { text: "Cara, o melhor grupo que já vi !\nSe eu fosse você aumentaria até o valor e continuaria investindo nisso. É muito bom mesmo!", time: "15:34", align: "left" as const },
+      { text: "Mulher, o melhor grupo que já vi !\nSe eu fosse você aumentaria até o valor e continuaria investindo nisso. É muito bom mesmo!", time: "15:34", align: "left" as const },
     ],
   },
   {
     date: "23 de janeiro",
     texts: [
-      { text: "Mano tem atualizacao sempre?", time: "20:01", align: "left" as const },
+      { text: "Menina tem atualizacao sempre?", time: "20:01", align: "left" as const },
       { text: "vlw mn", time: "13:50", align: "right" as const },
-      { text: "Eae Mano", time: "15:38", align: "left" as const },
+      { text: "Eae amiga", time: "15:38", align: "left" as const },
       { text: "Canal top viu", time: "16:10", align: "left" as const },
     ],
   },
   {
     date: null,
     texts: [
-      { text: "Pqp que trabalho hein mano. Tmj, tenha paciência e espero que permaneçam com o conteúdo top de sempre!", time: "23:56", align: "left" as const },
+      { text: "Pqp que trabalho hein Mulher. Tmj, tenha paciência e espero que permaneçam com as lives top de sempre!", time: "23:56", align: "left" as const },
     ],
   },
 ];
