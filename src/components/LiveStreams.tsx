@@ -4,7 +4,7 @@ import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
 
 const lives = [
-  { name: "sweetAli_", views: 198, img: live1 },
+  { name: "liviasex", views: 198, img: live1 },
   { name: "Halanamorena", views: 82, img: live2 },
   { name: "jujugostamt2000", views: 70, img: live3 },
   { name: "OliviaWild_", views: 54, img: live1 },
