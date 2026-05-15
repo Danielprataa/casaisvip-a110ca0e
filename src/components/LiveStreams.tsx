@@ -2,12 +2,13 @@ import { Play, ChevronRight, Eye, Video } from "lucide-react";
 import live1 from "@/assets/live1.jpg";
 import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
+import live4 from "@/assets/live4.jpg";
 
 const lives = [
   { name: "liviasex", views: 198, img: live1 },
   { name: "Halanamorena", views: 82, img: live2 },
   { name: "jujugostamt2000", views: 70, img: live3 },
-  { name: "OliviaWild_", views: 54, img: live1 },
+  { name: "OliviaWild_", views: 54, img: live4 },
 ];
 
 const LiveStreams = () => {
