@@ -1,10 +1,13 @@
 import { Play, ChevronRight, Eye, Video } from "lucide-react";
+import live1 from "@/assets/live1.jpg";
+import live2 from "@/assets/live2.jpg";
+import live3 from "@/assets/live3.jpg";
 
 const lives = [
-  { name: "sweetAli_", views: 198, img: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=400&h=600&fit=crop&crop=faces" },
-  { name: "Halanamorena", views: 82, img: "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=400&h=600&fit=crop&crop=faces" },
-  { name: "jujugostamt2000", views: 70, img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=600&fit=crop&crop=faces" },
-  { name: "OliviaWild_", views: 54, img: "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=400&h=600&fit=crop&crop=faces" },
+  { name: "sweetAli_", views: 198, img: live1 },
+  { name: "Halanamorena", views: 82, img: live2 },
+  { name: "jujugostamt2000", views: 70, img: live3 },
+  { name: "OliviaWild_", views: 54, img: live1 },
 ];
 
 const LiveStreams = () => {
