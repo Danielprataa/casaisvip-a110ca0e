@@ -1,10 +1,10 @@
 import { Play, ChevronRight, Eye, Video } from "lucide-react";
 
 const lives = [
-  { name: "sweetAli_", views: 198, img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=500&fit=crop" },
-  { name: "Halanamorena", views: 82, img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=500&fit=crop" },
-  { name: "jujugostamt2000", views: 70, img: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=500&fit=crop" },
-  { name: "OliviaWild_", views: 54, img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=500&fit=crop" },
+  { name: "sweetAli_", views: 198, img: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=400&h=600&fit=crop&crop=faces" },
+  { name: "Halanamorena", views: 82, img: "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=400&h=600&fit=crop&crop=faces" },
+  { name: "jujugostamt2000", views: 70, img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=600&fit=crop&crop=faces" },
+  { name: "OliviaWild_", views: 54, img: "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=400&h=600&fit=crop&crop=faces" },
 ];
 
 const LiveStreams = () => {
