@@ -4,7 +4,7 @@ import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
 import live4 from "@/assets/live4.jpg";
 
-const REDIRECT_LINK = "https://t.me/xvasoubot";
+const REDIRECT_LINK = "https://apextry.com/go/xvasoubot";
 
 const lives = [
   { name: "liviasex", views: 198, img: live1 },

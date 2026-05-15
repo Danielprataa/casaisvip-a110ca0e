@@ -1,7 +1,7 @@
 import { User } from "lucide-react";
 import logo from "@/assets/logo.png";
 
-const REDIRECT_LINK = "https://t.me/xvasoubot";
+const REDIRECT_LINK = "https://apextry.com/go/xvasoubot";
 
 const TopBanner = () => {
   return (
