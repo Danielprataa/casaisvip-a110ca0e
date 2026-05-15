@@ -4,7 +4,7 @@ const messages = [
   {
     date: "29 de janeiro",
     texts: [
-      { text: "Mulher, o melhor grupo que já vi !\nSe eu fosse você aumentaria até o valor e continuaria investindo nisso. É muito bom mesmo!", time: "15:34", align: "left" as const },
+      { text: "Mulher, o melhor grupo de videos lives que já vi!\nSe eu fosse você aumentaria até o valor e continuaria investindo nisso. É muito bom mesmo!", time: "15:34", align: "left" as const },
     ],
   },
   {
