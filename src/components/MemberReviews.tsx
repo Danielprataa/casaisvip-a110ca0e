@@ -11,7 +11,7 @@ const messages = [
     date: "23 de janeiro",
     texts: [
       { text: "Menina tem atualizacao sempre?", time: "20:01", align: "left" as const },
-      { text: "vlw mn", time: "13:50", align: "right" as const },
+      { text: "todo dia tem atualização e novos usuários", time: "13:50", align: "right" as const },
       { text: "Eae amiga", time: "15:38", align: "left" as const },
       { text: "Canal top viu", time: "16:10", align: "left" as const },
     ],
