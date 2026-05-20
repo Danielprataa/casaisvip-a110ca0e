@@ -4,7 +4,7 @@ import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
 import live4 from "@/assets/live4.jpg";
 
-const REDIRECT_LINK = "https://t.me/xvasoubot";
+const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
   { name: "liviasex", views: 198, img: live1 },
@@ -34,8 +34,6 @@ const LiveStreams = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           <a
             href={REDIRECT_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
             className="bg-primary rounded-xl flex flex-col items-center justify-center aspect-[3/4] hover:opacity-90 transition glow-primary"
           >
             <ChevronRight className="w-8 h-8 text-primary-foreground mb-2" />
@@ -46,8 +44,6 @@ const LiveStreams = () => {
             <a
               key={i}
               href={REDIRECT_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
               className="relative rounded-xl overflow-hidden border border-primary/40 aspect-[3/4] group"
             >
               <img src={live.img} alt={live.name} className="w-full h-full object-cover" />

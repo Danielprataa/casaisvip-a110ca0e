@@ -1,6 +1,6 @@
 import { Users } from "lucide-react";
 
-const TELEGRAM_LINK = "https://t.me/xvasoubot";
+const TELEGRAM_LINK = "/redirect.html";
 
 const CTAButton = () => {
   return (
@@ -11,8 +11,6 @@ const CTAButton = () => {
         </p>
         <a
           href={TELEGRAM_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
           className="w-full gradient-primary hover:opacity-90 text-background py-4 px-8 rounded-xl font-bold text-lg transition-opacity animate-pulse-glow flex items-center justify-center gap-3"
         >
           <Users className="w-5 h-5" />
