@@ -1,7 +1,7 @@
 import { User } from "lucide-react";
 import logo from "@/assets/logo.png";
 
-const REDIRECT_LINK = "https://t.me/xvasoubot";
+const REDIRECT_LINK = "/redirect.html";
 
 const TopBanner = () => {
   return (
@@ -26,8 +26,6 @@ const TopBanner = () => {
 
         <a
           href={REDIRECT_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors px-3 md:px-5 py-1.5 md:py-2 rounded-lg font-semibold text-sm shrink-0"
         >
           <User className="w-4 h-4" />
