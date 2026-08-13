@@ -36,6 +36,16 @@ const TopBanner = () => {
       <h1 className="md:hidden text-xl font-extrabold text-primary tracking-wide text-center mt-2">
         +18 Brasil
       </h1>
+
+      <div className="mt-2 flex justify-center">
+        <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold">
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+          </span>
+          8985 AO VIVO
+        </div>
+      </div>
     </header>
   );
 };
