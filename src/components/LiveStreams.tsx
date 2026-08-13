@@ -7,10 +7,10 @@ import live4 from "@/assets/live4.jpg";
 const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
-  { name: "liviasex", views: 198, img: live1 },
-  { name: "Halanamorena", views: 82, img: live2 },
-  { name: "jujugostamt2000", views: 70, img: live3 },
-  { name: "OliviaWild_", views: 54, img: live4 },
+  { name: "liviasex", views: 1251, img: live1 },
+  { name: "Halanamorena", views: 677, img: live2 },
+  { name: "jujugostamt2000", views: 932, img: live3 },
+  { name: "OliviaWild_", views: 2454, img: live4 },
 ];
 
 const LiveStreams = () => {
