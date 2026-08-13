@@ -28,7 +28,7 @@ const LiveStreams = () => {
           <span className="bg-primary text-primary-foreground text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">
             Ao Vivo
           </span>
-          <h3 className="text-xl font-bold text-foreground">Players ao Vivo</h3>
+          <h3 className="text-xl font-bold text-foreground">Streamers ao Vivo</h3>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
