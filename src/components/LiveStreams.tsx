@@ -1,4 +1,4 @@
-import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Shield } from "lucide-react";
+import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Shield, Gift, Radio, Bell, BadgeCheck } from "lucide-react";
 import live1 from "@/assets/live1.jpg";
 import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
@@ -106,6 +106,30 @@ const LiveStreams = () => {
               <span>
                 <strong className="text-primary">Sigilo ao navegar</strong> — acesso discreto e seguro
               </span>
+            </li>
+            <li className="flex items-start gap-3 text-foreground text-sm">
+              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
+                <Gift className="w-5 h-5 text-primary" />
+              </span>
+              <span><strong className="text-primary">Sorteios de acesso VIP grátis</strong></span>
+            </li>
+            <li className="flex items-start gap-3 text-foreground text-sm">
+              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
+                <Radio className="w-5 h-5 text-primary" />
+              </span>
+              <span><strong className="text-primary">Acesso antecipado</strong> a novas transmissões</span>
+            </li>
+            <li className="flex items-start gap-3 text-foreground text-sm">
+              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
+                <Bell className="w-5 h-5 text-primary" />
+              </span>
+              <span><strong className="text-primary">Notificações prioritárias</strong> quando entrar ao vivo</span>
+            </li>
+            <li className="flex items-start gap-3 text-foreground text-sm">
+              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
+                <BadgeCheck className="w-5 h-5 text-primary" />
+              </span>
+              <span><strong className="text-primary">Selo exclusivo de membro</strong> no chat público</span>
             </li>
           </ul>
         </div>
