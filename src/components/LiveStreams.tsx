@@ -72,6 +72,9 @@ const LiveStreams = () => {
             <h3 className="text-2xl font-bold text-foreground">Lives Amadoras</h3>
           </div>
           <p className="text-muted-foreground text-sm mt-1">Modelos brasileiras ao vivo</p>
+          <p className="text-foreground text-sm mt-2">
+            Você terá acesso ao WhatsApp de todas as modelos, chat privado e chat aberto durante as lives.
+          </p>
         </div>
       </div>
     </section>
