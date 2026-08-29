@@ -1,4 +1,4 @@
-import { Play, ChevronRight, Eye, Video, MessageCircle, Users } from "lucide-react";
+import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Shield } from "lucide-react";
 import live1 from "@/assets/live1.jpg";
 import live2 from "@/assets/live2.jpg";
 import live3 from "@/assets/live3.jpg";
@@ -97,6 +97,14 @@ const LiveStreams = () => {
               </span>
               <span>
                 <strong className="text-primary">Chat público aberto</strong> durante as lives para interagir
+              </span>
+            </li>
+            <li className="flex items-start gap-3 text-foreground text-sm">
+              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
+                <Shield className="w-5 h-5 text-primary" />
+              </span>
+              <span>
+                <strong className="text-primary">Sigilo ao navegar</strong> — acesso discreto e seguro
               </span>
             </li>
           </ul>
