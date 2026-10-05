@@ -18,7 +18,7 @@ const LiveStreams = () => {
     <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-3 text-foreground">
-          Lives Amadoras Brasileiras
+          Lives Amadoras Internacionais
         </h2>
         <p className="text-center text-muted-foreground mb-10">
           Acesso seguro e discreto a conteúdo +18 premium
