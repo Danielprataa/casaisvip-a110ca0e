@@ -28,7 +28,7 @@ const TopBanner = () => {
         </a>
 
         <h1 className="hidden md:block text-2xl md:text-3xl font-extrabold text-primary tracking-wide text-center">
-          +18 Brasil
+          +18
         </h1>
 
         <a
@@ -41,7 +41,7 @@ const TopBanner = () => {
       </div>
 
       <h1 className="md:hidden text-xl font-extrabold text-primary tracking-wide text-center mt-2">
-        +18 Brasil
+        +18
       </h1>
 
       <div className="sm:hidden mt-2 flex justify-center">
