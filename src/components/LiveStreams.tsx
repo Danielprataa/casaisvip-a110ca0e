@@ -7,10 +7,10 @@ import live4 from "@/assets/live4.jpg";
 const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
-  { name: "liviasex", views: 1251, img: live1 },
-  { name: "Halanamorena", views: 677, img: live2 },
-  { name: "jujugostamt2000", views: 932, img: live3 },
-  { name: "OliviaWild_", views: 2454, img: live4 },
+  { name: "liviasex", views: 1251, img: live1, flag: "🇧🇷" },
+  { name: "Halanamorena", views: 677, img: live2, flag: "🇨🇴" },
+  { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
+  { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
 ];
 
 const LiveStreams = () => {
@@ -60,7 +60,7 @@ const LiveStreams = () => {
                 </div>
               </div>
               <div className="absolute bottom-2 left-2 right-2 text-white font-semibold text-sm flex items-center gap-1">
-                {live.name} <span>🇧🇷</span>
+                {live.name} <span>{live.flag}</span>
               </div>
             </a>
           ))}
