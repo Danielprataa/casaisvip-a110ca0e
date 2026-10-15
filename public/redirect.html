@@ -16,23 +16,65 @@
       BR: { user: "casaisvippbot", link: "https://t.me/casaisvippbot" },
       INTERNATIONAL: { user: "parejasvip_Bot", link: "https://t.me/parejasvip_Bot" }
     };
-    let selectedDestination = destinations.BR;
+    let selectedDestination = null;
+    let detectionInProgress = false;
+
+    async function fetchCountry(url, parseResponse) {
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 5000);
+      try {
+        const response = await fetch(url, {
+          cache: "no-store",
+          signal: controller.signal
+        });
+        if (!response.ok) throw new Error("Country lookup failed");
+        const country = (await parseResponse(response)).trim().toUpperCase();
+        if (!/^[A-Z]{2}$/.test(country)) throw new Error("Invalid country code");
+        return country;
+      } finally {
+        window.clearTimeout(timeout);
+      }
+    }
+
+    async function getVisitorCountry() {
+      try {
+        return await fetchCountry(
+          "https://ipapi.co/country/",
+          response => response.text()
+        );
+      } catch (primaryError) {
+        return await fetchCountry(
+          "https://ipwho.is/",
+          async response => {
+            const data = await response.json();
+            if (!data.success || typeof data.country_code !== "string") {
+              throw new Error("Secondary country lookup failed");
+            }
+            return data.country_code;
+          }
+        );
+      }
+    }
 
     async function detectCountryAndRedirect() {
-      try {
-        const response = await fetch("https://ipapi.co/country/", { cache: "no-store" });
-        if (!response.ok) throw new Error("Country lookup failed");
-        const country = (await response.text()).trim().toUpperCase();
-        if (!/^[A-Z]{2}$/.test(country)) throw new Error("Invalid country code");
+      if (detectionInProgress) return;
+      detectionInProgress = true;
 
+      const telegramLink = document.getElementById("telegramLink");
+      const description = document.getElementById("description");
+      const copyButton = document.getElementById("copyButton");
+      telegramLink.textContent = "Identificando país...";
+      description.textContent = "Aguarde enquanto identificamos sua localização.";
+      copyButton.textContent = "Aguarde...";
+
+      try {
+        const country = await getVisitorCountry();
         selectedDestination = country === "BR"
           ? destinations.BR
           : destinations.INTERNATIONAL;
 
-        const telegramLink = document.querySelector("main a");
-        const description = document.querySelector("main p");
-        const copyButton = document.querySelector("main button");
         telegramLink.href = selectedDestination.link;
+        telegramLink.onclick = null;
         telegramLink.textContent = "Abrir no Telegram";
         description.innerHTML = "Se ficar carregando, toque no botão abaixo ou pesquise por <strong>@" + selectedDestination.user + "</strong> no Telegram.";
         copyButton.textContent = "Copiar @" + selectedDestination.user;
@@ -44,14 +86,28 @@
           window.location.replace(selectedDestination.link);
         }
       } catch (error) {
-        selectedDestination = destinations.BR;
-        window.location.replace(destinations.BR.link);
+        selectedDestination = null;
+        telegramLink.href = "#";
+        telegramLink.textContent = "Tentar identificar novamente";
+        telegramLink.onclick = (event) => {
+          event.preventDefault();
+          detectionInProgress = false;
+          detectCountryAndRedirect();
+        };
+        description.textContent = "Não foi possível identificar seu país. Para evitar abrir o bot errado, tente novamente.";
+        copyButton.textContent = "País não identificado";
+        document.getElementById("copyText").textContent = "";
+        detectionInProgress = false;
       }
     }
 
     window.addEventListener("load", detectCountryAndRedirect);
 
     function copyUser() {
+      if (!selectedDestination) {
+        document.getElementById("copyText").textContent = "Identifique seu país antes de copiar o usuário.";
+        return;
+      }
       navigator.clipboard?.writeText("@" + selectedDestination.user);
       document.getElementById("copyText").textContent = "Usuário copiado: @" + selectedDestination.user;
     }
@@ -60,9 +116,9 @@
 <body>
   <main>
     <h1>Abrindo o Telegram...</h1>
-    <p>Se ficar carregando, toque no botão abaixo ou pesquise por <strong>@casaisvippbot</strong> no Telegram.</p>
-    <a href="https://telegram.me/casaisvippbot">Abrir no Telegram</a>
-    <button class="secondary" onclick="copyUser()" type="button">Copiar @casaisvippbot</button>
+    <p id="description">Identificando seu país...</p>
+    <a id="telegramLink" href="#" onclick="return false;">Identificando país...</a>
+    <button id="copyButton" class="secondary" onclick="copyUser()" type="button">Aguarde...</button>
     <p id="copyText"></p>
   </main>
 </body>
