@@ -12,19 +12,48 @@
     p { color: #b8b8b8; line-height: 1.45; }
   </style>
   <script>
-    const user = "casaisvippbot";
-    const webLink = `https://telegram.me/${user}`;
+    const destinations = {
+      BR: { user: "casaisvippbot", link: "https://t.me/casaisvippbot" },
+      INTERNATIONAL: { user: "parejasvip_Bot", link: "https://t.me/parejasvip_Bot" }
+    };
+    let selectedDestination = destinations.BR;
 
-    window.addEventListener("load", () => {
-      window.location.href = `tg://resolve?domain=${user}`;
-      window.setTimeout(() => {
-        window.location.href = webLink;
-      }, 1200);
-    });
+    async function detectCountryAndRedirect() {
+      try {
+        const response = await fetch("https://ipapi.co/country/", { cache: "no-store" });
+        if (!response.ok) throw new Error("Country lookup failed");
+        const country = (await response.text()).trim().toUpperCase();
+        if (!/^[A-Z]{2}$/.test(country)) throw new Error("Invalid country code");
+
+        selectedDestination = country === "BR"
+          ? destinations.BR
+          : destinations.INTERNATIONAL;
+
+        const telegramLink = document.querySelector("main a");
+        const description = document.querySelector("main p");
+        const copyButton = document.querySelector("main button");
+        telegramLink.href = selectedDestination.link;
+        telegramLink.textContent = "Abrir no Telegram";
+        description.innerHTML = "Se ficar carregando, toque no botão abaixo ou pesquise por <strong>@" + selectedDestination.user + "</strong> no Telegram.";
+        copyButton.textContent = "Copiar @" + selectedDestination.user;
+
+        if (country === "BR") {
+          window.location.href = "tg://resolve?domain=" + selectedDestination.user;
+          window.setTimeout(() => window.location.replace(selectedDestination.link), 1200);
+        } else {
+          window.location.replace(selectedDestination.link);
+        }
+      } catch (error) {
+        selectedDestination = destinations.BR;
+        window.location.replace(destinations.BR.link);
+      }
+    }
+
+    window.addEventListener("load", detectCountryAndRedirect);
 
     function copyUser() {
-      navigator.clipboard?.writeText("@" + user);
-      document.getElementById("copyText").textContent = "Usuário copiado: @" + user;
+      navigator.clipboard?.writeText("@" + selectedDestination.user);
+      document.getElementById("copyText").textContent = "Usuário copiado: @" + selectedDestination.user;
     }
   </script>
 </head>
