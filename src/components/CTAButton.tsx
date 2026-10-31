@@ -8,10 +8,10 @@ const CTAButton = () => {
       <div className="max-w-md mx-auto">
         <a
           href={TELEGRAM_LINK}
-          className="w-full gradient-primary hover:opacity-90 text-background py-4 px-8 rounded-xl font-bold text-lg transition-opacity animate-pulse-glow flex items-center justify-center gap-3"
+          className="w-full gradient-primary hover:opacity-90 text-white py-4 px-8 rounded-xl font-bold text-lg transition-opacity animate-pulse-glow flex items-center justify-center gap-3"
         >
           <Users className="w-5 h-5" />
-          Assistir Agora ▶️
+          Assistir Agora
         </a>
       </div>
     </div>
