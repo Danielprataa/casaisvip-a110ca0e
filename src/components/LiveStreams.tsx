@@ -17,8 +17,8 @@ const lives = [
   { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
   { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
   { name: "casalhot", views: 513, img: live5, flag: "🇧🇷" },
-  { name: "CasalSemLimite", views: 0, img: live6, flag: "🇧🇷" },
-  { name: "QuartetoProibido", views: 0, img: live7, flag: "🇧🇷" },
+  { name: "CasalSemLimite", views: 1713, img: live6, flag: "🇧🇷" },
+  { name: "QuartetoProibido", views: 3186, img: live7, flag: "🇧🇷" },
   { name: "Aninhappkrosa", views: 0, img: live8, flag: "🇧🇷" },
   { name: "ÉaGulosadajuh", views: 0, img: live9, flag: "🇲🇽" },
 ];
