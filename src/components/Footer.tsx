@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="text-muted-foreground text-xs">
           Ao selecionar “Assistir Agora”, você será direcionado ao Telegram para continuar.
         </p>
-        <p className="text-muted-foreground/60 text-xs">© {new Date().getFullYear()} CasaisVip</p>
+        <p className="text-muted-foreground/60 text-xs">© 2025 CasaisVip</p>
       </div>
     </footer>
   );
