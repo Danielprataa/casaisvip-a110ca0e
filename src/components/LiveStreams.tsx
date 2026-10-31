@@ -28,7 +28,7 @@ const LiveStreams = () => {
     <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-3 text-foreground">
-          🔴 Lives Amadoras ao Vivo
+          Lives Amadoras ao Vivo
         </h2>
         <p className="text-center text-muted-foreground mb-10">
           Explore transmissões e conteúdos exclusivos para maiores de 18 anos.
