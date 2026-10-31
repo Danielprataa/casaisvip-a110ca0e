@@ -1,8 +1,9 @@
 import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Shield, Gift, Radio, Bell, BadgeCheck } from "lucide-react";
-import live1 from "@/assets/live1.jpg";
-import live2 from "@/assets/live2.jpg";
-import live3 from "@/assets/live3.jpg";
-import live4 from "@/assets/live4.jpg";
+import live1 from "@/assets/3?url";
+import live2 from "@/assets/5?url";
+import live3 from "@/assets/6?url";
+import live4 from "@/assets/7?url";
+import live5 from "@/assets/9?url";
 
 const REDIRECT_LINK = "/redirect.html";
 
@@ -11,6 +12,7 @@ const lives = [
   { name: "Halanamorena", views: 677, img: live2, flag: "🇨🇴" },
   { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
   { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
+  { name: "casalhot", views: 0, img: live5, flag: "🇧🇷" },
 ];
 
 const LiveStreams = () => {
