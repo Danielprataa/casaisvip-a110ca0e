@@ -4,6 +4,10 @@ import live2 from "@/assets/5?url";
 import live3 from "@/assets/6?url";
 import live4 from "@/assets/7?url";
 import live5 from "@/assets/9?url";
+import live6 from "@/assets/10?url";
+import live7 from "@/assets/11?url";
+import live8 from "@/assets/12?url";
+import live9 from "@/assets/13?url";
 
 const REDIRECT_LINK = "/redirect.html";
 
@@ -13,6 +17,10 @@ const lives = [
   { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
   { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
   { name: "casalhot", views: 513, img: live5, flag: "🇧🇷" },
+  { name: "CasalSemLimite", views: 0, img: live6, flag: "🇧🇷" },
+  { name: "QuartetoProibido", views: 0, img: live7, flag: "🇧🇷" },
+  { name: "Aninhappkrosa", views: 0, img: live8, flag: "🇧🇷" },
+  { name: "ÉaGulosadajuh", views: 0, img: live9, flag: "🇲🇽" },
 ];
 
 const LiveStreams = () => {
