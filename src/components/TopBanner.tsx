@@ -23,7 +23,7 @@ const TopBanner = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
             </span>
-            15768 AO VIVO
+            18.985 AO VIVO
           </span>
         </a>
 
@@ -50,7 +50,7 @@ const TopBanner = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
           </span>
-          15768 AO VIVO
+          18.985 AO VIVO
         </div>
       </div>
     </header>
