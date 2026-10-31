@@ -20,7 +20,7 @@ const lives = [
   { name: "CasalSemLimite", views: 1713, img: live6, flag: "🇧🇷" },
   { name: "QuartetoProibido", views: 3186, img: live7, flag: "🇧🇷" },
   { name: "Aninhappkrosa", views: 949, img: live8, flag: "🇧🇷" },
-  { name: "ÉaGulosadajuh", views: 0, img: live9, flag: "🇲🇽" },
+  { name: "ÉaGulosadajuh", views: 4722, img: live9, flag: "🇲🇽" },
 ];
 
 const LiveStreams = () => {
