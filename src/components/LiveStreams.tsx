@@ -31,7 +31,7 @@ const LiveStreams = () => {
           Lives Amadoras Internacionais
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Acesso seguro e discreto a conteúdo +18 premium
+          Explore transmissões e conteúdos exclusivos para maiores de 18 anos.
         </p>
 
         <div className="flex items-center gap-3 mb-4">
