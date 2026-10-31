@@ -1,4 +1,4 @@
-import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Shield, Gift, Radio, Bell, BadgeCheck } from "lucide-react";
+import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Bell, BadgeCheck } from "lucide-react";
 import live1 from "@/assets/3?url";
 import live2 from "@/assets/5?url";
 import live3 from "@/assets/6?url";
@@ -108,26 +108,6 @@ const LiveStreams = () => {
               <span>
                 <strong className="text-primary">Chat público aberto</strong> durante as lives para interagir
               </span>
-            </li>
-            <li className="flex items-start gap-3 text-foreground text-sm">
-              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
-                <Shield className="w-5 h-5 text-primary" />
-              </span>
-              <span>
-                <strong className="text-primary">Sigilo ao navegar</strong> — acesso discreto e seguro
-              </span>
-            </li>
-            <li className="flex items-start gap-3 text-foreground text-sm">
-              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
-                <Gift className="w-5 h-5 text-primary" />
-              </span>
-              <span><strong className="text-primary">Sorteios de acesso VIP grátis</strong></span>
-            </li>
-            <li className="flex items-start gap-3 text-foreground text-sm">
-              <span className="bg-primary/10 p-2 rounded-lg shrink-0">
-                <Radio className="w-5 h-5 text-primary" />
-              </span>
-              <span><strong className="text-primary">Acesso antecipado</strong> a novas transmissões</span>
             </li>
             <li className="flex items-start gap-3 text-foreground text-sm">
               <span className="bg-primary/10 p-2 rounded-lg shrink-0">
