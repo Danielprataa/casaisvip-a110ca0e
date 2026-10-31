@@ -12,7 +12,7 @@ const lives = [
   { name: "Halanamorena", views: 677, img: live2, flag: "🇨🇴" },
   { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
   { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
-  { name: "casalhot", views: 0, img: live5, flag: "🇧🇷" },
+  { name: "casalhot", views: 513, img: live5, flag: "🇧🇷" },
 ];
 
 const LiveStreams = () => {
