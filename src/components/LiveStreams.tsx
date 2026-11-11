@@ -11,14 +11,14 @@ import live8 from "@/assets/download (8).png?url";
 const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
-  { name: "CasalIntenso", views: 1251, img: live1, flag: "🇧🇷" },
-  { name: "MorenaVip", views: 677, img: live2, flag: "🇨🇴" },
-  { name: "DuplaSecreta", views: 932, img: live3, flag: "🇧🇷" },
-  { name: "NoitePrivada", views: 2454, img: live4, flag: "🇨🇴" },
-  { name: "CasalDesejo", views: 513, img: live5, flag: "🇧🇷" },
-  { name: "LunaExclusiva", views: 1713, img: live6, flag: "🇧🇷" },
-  { name: "ConexaoVip", views: 3186, img: live7, flag: "🇧🇷" },
-  { name: "SegredoAdois", views: 949, img: live8, flag: "🇧🇷" },
+  { name: "LiviaMorena", views: 1251, img: live1, flag: "🇧🇷" },
+  { name: "JadePrivada", views: 677, img: live2, flag: "🇨🇴" },
+  { name: "LunaRosa", views: 932, img: live3, flag: "🇧🇷" },
+  { name: "BiaSecreta", views: 2454, img: live4, flag: "🇨🇴" },
+  { name: "NinaVip", views: 513, img: live5, flag: "🇧🇷" },
+  { name: "MelExclusiva", views: 1713, img: live6, flag: "🇧🇷" },
+  { name: "DaniCharmosa", views: 3186, img: live7, flag: "🇧🇷" },
+  { name: "AnaDesejo", views: 949, img: live8, flag: "🇧🇷" },
 ];
 
 const LiveStreams = () => {
