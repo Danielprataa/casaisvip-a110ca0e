@@ -2,7 +2,7 @@ import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Bell, BadgeCheck 
 import live1 from "@/assets/1.jpg";
 import live2 from "@/assets/2.jpg";
 import live3 from "@/assets/3.jpg";
-import live4 from "@/assets/3.jpg";
+import live4 from "@/assets/4.jpg";
 import live5 from "@/assets/5.jpg";
 import live6 from "@/assets/6.jpg";
 import live7 from "@/assets/7.jpg";
