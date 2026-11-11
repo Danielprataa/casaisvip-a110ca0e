@@ -1,12 +1,12 @@
 import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Bell, BadgeCheck } from "lucide-react";
-import live1 from "@/assets/live1.png?url&v=20261111-2";
-import live2 from "@/assets/live2.png?url&v=20261111-2";
-import live3 from "@/assets/live3.png?url&v=20261111-2";
-import live4 from "@/assets/live4.png?url&v=20261111-2";
-import live5 from "@/assets/live5.png?url&v=20261111-2";
-import live6 from "@/assets/live6.png?url&v=20261111-2";
-import live7 from "@/assets/live7.png?url&v=20261111-2";
-import live8 from "@/assets/live8.png?url&v=20261111-2";
+import live1 from "@/assets/1.jpg";
+import live2 from "@/assets/2.jpg";
+import live3 from "@/assets/3.jpg";
+import live4 from "@/assets/3.jpg";
+import live5 from "@/assets/5.jpg";
+import live6 from "@/assets/6.jpg";
+import live7 from "@/assets/7.jpg";
+import live8 from "@/assets/8.jpg";
 
 const REDIRECT_LINK = "/redirect.html";
 
