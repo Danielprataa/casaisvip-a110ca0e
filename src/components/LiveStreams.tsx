@@ -11,7 +11,7 @@ import live8 from "@/assets/8.jpg";
 const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
-  { name: "LiviaMorena", views: 1251, img: live1, flag: "🇧🇷" },
+  { name: "gabimorena", views: 1251, img: live1, flag: "🇧🇷" },
   { name: "JadePrivada", views: 677, img: live2, flag: "🇨🇴" },
   { name: "LunaRosa", views: 932, img: live3, flag: "🇧🇷" },
   { name: "BiaSecreta", views: 2454, img: live4, flag: "🇨🇴" },
