@@ -1,26 +1,24 @@
 import { Play, ChevronRight, Eye, Video, MessageCircle, Users, Bell, BadgeCheck } from "lucide-react";
-import live1 from "@/assets/live1.png?url";
-import live2 from "@/assets/live2.png?url";
-import live3 from "@/assets/live3.png?url";
-import live4 from "@/assets/live4.png?url";
-import live5 from "@/assets/live5.png?url";
-import live6 from "@/assets/live6.png?url";
-import live7 from "@/assets/live7.png?url";
-import live8 from "@/assets/live8.png?url";
-import live9 from "@/assets/live8.png?url";
+import live1 from "@/assets/download (1).png?url";
+import live2 from "@/assets/download (2).png?url";
+import live3 from "@/assets/download (3).png?url";
+import live4 from "@/assets/download (4).png?url";
+import live5 from "@/assets/download (5).png?url";
+import live6 from "@/assets/download (6).png?url";
+import live7 from "@/assets/download (7).png?url";
+import live8 from "@/assets/download (8).png?url";
 
 const REDIRECT_LINK = "/redirect.html";
 
 const lives = [
-  { name: "liviasex", views: 1251, img: live1, flag: "🇧🇷" },
-  { name: "Halanamorena", views: 677, img: live2, flag: "🇨🇴" },
-  { name: "jujugostamt2000", views: 932, img: live3, flag: "🇧🇷" },
-  { name: "OliviaWild_", views: 2454, img: live4, flag: "🇨🇴" },
-  { name: "casalhot", views: 513, img: live5, flag: "🇧🇷" },
-  { name: "CasalSemLimite", views: 1713, img: live6, flag: "🇧🇷" },
-  { name: "QuartetoProibido", views: 3186, img: live7, flag: "🇧🇷" },
-  { name: "Aninhappkrosa", views: 949, img: live8, flag: "🇧🇷" },
-  { name: "ÉaGulosadajuh", views: 4722, img: live9, flag: "🇧🇷" },
+  { name: "CasalIntenso", views: 1251, img: live1, flag: "🇧🇷" },
+  { name: "MorenaVip", views: 677, img: live2, flag: "🇨🇴" },
+  { name: "DuplaSecreta", views: 932, img: live3, flag: "🇧🇷" },
+  { name: "NoitePrivada", views: 2454, img: live4, flag: "🇨🇴" },
+  { name: "CasalDesejo", views: 513, img: live5, flag: "🇧🇷" },
+  { name: "LunaExclusiva", views: 1713, img: live6, flag: "🇧🇷" },
+  { name: "ConexaoVip", views: 3186, img: live7, flag: "🇧🇷" },
+  { name: "SegredoAdois", views: 949, img: live8, flag: "🇧🇷" },
 ];
 
 const LiveStreams = () => {
